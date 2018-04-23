@@ -35,6 +35,9 @@ var makeHash = function(){
           return bucket[i].val;
         }
       }
+    },
+    store: function(){
+      return storage
     }
   };
   return hashTable;
@@ -48,3 +51,20 @@ var hash = function(key, max){
   }
   return hash;
 }
+
+var test = new makeHash()
+console.log('test', test);
+test.insert('wonbok', 'hi');
+test.insert('wonbok', 'bye');
+// test.insert('james', 123456);
+// test.insert('peter', 789);
+// var find = test.retrieve('james')
+// console.log(find);
+
+// console.log(test.store());
+
+
+// var obj = test.store()[0][0]['val'];
+// console.log('obj', obj);
+
+

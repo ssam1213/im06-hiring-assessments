@@ -9,7 +9,13 @@ var sport = {
     { name: 'LeBron James', age: 31 },
     { name: 'Kevin Durant', age: 28 }
   ],
-  playerNames: function () {
-    // YOUR CODE HERE
+  playerNames: function (players) {
+    var result = [];
+    for(var i=0; i<this.players.length; i++){
+      result.push(this.players[i].name + 'plays basketball')
+    }
+    return result
   }
 };
+
+console.log(sport.playerNames());

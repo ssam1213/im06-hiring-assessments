@@ -1,5 +1,35 @@
-<!--
+<!-- 
   CODE GOES HERE
   Don't forget newlines at the end of all files :)
--->
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<title>Page Title</title>
+<style>
+    .center {
+      position: absolute;
+        top: 50%;
+        left: 45%;
+        margin-right: -50%;
+  }
+    </style>
+</head>
+<body>
+
+<div class="center">
+<input id="val"type="text" value="입력하세요">
+<button id="submint" onclick='showValue()'>submit</button>
+</div>
+<script>
+  function showValue(){
+    var value = $('#val').val();
+    console.log(value);
+    
+  }
+</script>
+
+</body>
+</html>
 

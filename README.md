@@ -19,25 +19,23 @@
 
 너무 복잡한 부분은 어느정도 무시하고 빠르게 해결책을 찾아 만드는 것은 소프트웨어 엔지니어로서 개발하는데 필요한 스킬 입니다. 하지만 테스트는 그렇게 단순히 넘어가는 시간이 아닙니다. 테스트는 여러분들이 해결책을 만들어낼 수 있는 능력이 있는지 확인하는 것 뿐만 아니라, 여러분이 만든 해결책을 잘 이해하고 있는지 점검하는 시간입니다.
 
-코드스테이츠는 테스트에서 여러분이 실제로 개발하면서 직면할 수 있는 문제들과 비슷한 상황을 만들려고 노력했습니다. 여러분이 실무에서 겪을 일들의 주요 특징중 하나는 작업중인 바로 그 문제에 정확히 딱 맞는 해결책을 인터넷에서 찾기 어려울 수 있다는 점입니다. 테스트에서는 문제에서 요구하는 부분의 해결책을 직접 알려주는 코드를 참고해서는 안됩니다. 문제를 이해하기 위해 필요한 부분을 검색해 참고하는 건 괜찮습니다.
-
 정직하지않게 시험을 보면, 여러분이 학습한 부분을 얼마나 잘 이해했는지 정확히 진단하기 어렵습니다. 여러분은 모든 문제들을 스스로 해결할 수 있도록 노력해야합니다. 자료를 참고하더라도 바로 해결책을 알려주는 자료는 참고하지 않도록 제한해야 합니다. 참고한 자료가 본인이 생각하기에 공정한 자료를 참고하지 않았다고 생각되는 경우는 그 자료의 링크를 복사해서 문제의 답안에 넣어주시기 바랍니다.
 
 ## Grading Outline
 
-- [ ] algo-complexity
-- [ ] async-word-count
-- [ ] ds-queue
-- [ ] html-log-input
-- [ ] js-inheritance-pseudo-classical
-- [ ] no-sql-compare-sql
-- [ ] node-post-reqs
-- [ ] react-pond
-- [ ] recursion-print-array
-- [ ] sql-publisher-author-genre
-- [ ] testing-hash-table
-- [ ] this-keyword
-- [ ] underbar-each-filter
+- [Complete ] algo-complexity
+- [ Complete] async-word-count
+- [Complete ] ds-queue
+- [ Complete] html-log-input
+- [ Complete] js-inheritance-pseudo-classical
+- [ Mostly complete] no-sql-compare-sql
+- [ Complete] node-post-reqs
+- [ Complete] react-pond
+- [ Complete] recursion-print-array
+- [ Significant progress] sql-publisher-author-genre
+- [ Attempted] testing-hash-table
+- [ Complete] this-keyword
+- [ Complete] underbar-each-filter
 
 ## Self-Grading Process
 

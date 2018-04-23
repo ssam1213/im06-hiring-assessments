@@ -8,9 +8,8 @@
 // Problem 1: Retrieval of a value from a hash table using the following function with regard to the size of the hash table.
 
 /*
- Complexity:
+ Linear:
  */
-
 
 
 var retrieve = function(key){
@@ -25,10 +24,8 @@ var retrieve = function(key){
 // Problem 2: sortedArrayContainsItem
 
 /*
- Complexity:
+ LOGARITHMIC
  */
-
-
 
 var sortedArrayContainsItem = function(array, item){
   var center = Math.floor(array.length / 2);
@@ -43,7 +40,7 @@ var sortedArrayContainsItem = function(array, item){
 // Problem 3: hasDuplicates
 
 /*
- Complexity:
+Quadratic
  */
 
 

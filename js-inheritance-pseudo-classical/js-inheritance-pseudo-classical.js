@@ -42,9 +42,39 @@ var makeSmartPhone = function(phoneNumber, email) {
 // You shouldn't invoke `makePhone` or `makeSmartPhone` in either constructor
 
 var Phone = function(phoneNumber) {
-
+  this.result = {}
+  this.phoneNumber = phoneNumber
 };
+
+Phone.prototype.send = function(recipientPhoneNumber, message){
+  return 'sending the message "' + message + '" to the phone number ' 
+  + recipientPhoneNumber + ' from ' + this.phoneNumber;
+}
 
 var SmartPhone = function(phoneNumber, email) {
-
+  Phone.call(this)
+  this.phoneNumber = phoneNumber
+  this.email = email
 };
+
+SmartPhone.prototype = Object.create(Phone.prototype);
+SmartPhone.prototype.construtor = SmartPhone;
+SmartPhone.prototype.send = function(recipientPhoneNumberOrEmail, message){
+  if(typeof recipientPhoneNumberOrEmail === 'number'){
+    return Phone.prototype.send.call(this, recipientPhoneNumberOrEmail, message);
+  } else {
+    return 'sending the message "' + message + '" to email ' 
+    + recipientPhoneNumberOrEmail + ' from ' + this.email;
+  } 
+}
+
+
+var phone = new Phone(1047329112)
+console.log(phone.send(134, 'busy'))
+var smart = new SmartPhone(1050229046, 'ssam1213@naver.com')
+console.log(smart.send('condestates@naver.com', 'on meeting'));
+
+
+
+
+

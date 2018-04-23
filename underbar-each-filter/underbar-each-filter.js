@@ -39,7 +39,42 @@ filter(a,isString);
 
 
 var each = function(input, callback){
+  if(Array.isArray(input)){
+    for(var i=0; i<input.length; i++){
+      callback(input[i], i, input)
+    }
+  }
+  if(typeof input === 'object'){
+    for(var key in input){
+      callback(input[key], key, input)
+    }
+  }
 };
 
+// function logArrayElements(element, index, array) {
+//   console.log("a[" + index + "] = " + element);
+// }
+// console.log(each([2,5,9],logArrayElements));
+
+
 var filter = function(collection, truthTest){
+  // console.log('collection', collection);
+  // console.log('test', truthTest);
+  var result = [];
+    for(var i=0; i<collection.length; i++){
+      if(truthTest(collection[i])){
+        result.push(collection[i])
+      }
+    }
+  return result
 };
+
+
+var isString = function(input){
+  return typeof input === 'string';
+};
+var a = ['4',2,'marco',4,true,[1,2],{'yakko':'wakko'},6,'polo',8];
+console.log(filter(a,isString));
+
+// yields:
+// ['4','marco','polo'];
